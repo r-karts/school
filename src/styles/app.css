@@ -1,0 +1,250 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {}
+
+body {
+    font-family: arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#Schedule {
+    margin-left: 50px;
+    margin-top: 100px;
+    background: white;
+    background-size: 200%;
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem
+}
+
+#Schedule table thead tr td {
+    background: #dedede;
+    width: 110px;
+    border-right: 1px solid white;
+}
+
+#Schedule table thead tr td:first-child {
+    background: none;
+    width: 65px;
+    border: 0;
+}
+
+#Schedule table thead tr td div {
+    display: inline-block;
+}
+
+#Schedule table thead tr td div:last-child {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#Schedule table tbody tr td {
+    border-right: 1px solid #c7c7c7;
+}
+
+#Schedule table tbody tr:nth-child(2n) {
+    background: #dedede;
+}
+
+#Schedule table tbody tr td div {
+    /*background: #80BCD3;*/
+    padding: 1px;
+    height: 25px;
+    cursor: pointer;
+    color: #4e4e4e;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial;
+    text-align: center;
+}
+
+#Schedule table tbody tr td:first-child {
+    width: 65px;
+    border: 0;
+}
+
+#Schedule table tbody tr td:first-child div {
+    border: 0;
+    color: #54565d;
+    background: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: 65px;
+}
+
+
+.ResultsHolder input {
+    margin: 10px 40px;
+}
+
+.ResultsHolder #output {
+    font-family: Courier New;
+    font-size: 10px;
+    padding: 20px;
+}
+
+.arrow {
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 47px;
+}
+
+#next {
+    background: gray;
+    background-size: 100%;
+    top: 15px;
+    left: 43px;
+}
+
+#prev {
+    background: gray;
+    background-size: 100%;
+    transform: rotate(180deg);
+    top: 15px;
+}
+
+.number {
+    margin-left: 5px;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+.date {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    position: absolute;
+    background: #dedede;
+    width: 300px;
+    height: 50px;
+    top: -55px;
+    left: -0px;
+}
+
+.date p {
+    display: inline-block;
+    font-size: 30px;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+
+/*modal window*/
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+/* The Close Button */
+
+#close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #444444;
+    color: white;
+}
+
+.modal-body {
+    padding: 16px 16px;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+}
